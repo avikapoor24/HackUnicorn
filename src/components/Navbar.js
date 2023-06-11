@@ -7,11 +7,12 @@ const Navbar = () => {
     <>
       <nav className="main-nav">
         {/* 1st logo part  */}
-        <div className="logo">
-          <img className="logo LogoImg" src="logoimg.png" alt="LogoImg"></img>
-          <h2>FINOVATECH.IO</h2>
+        <img className=" LogoImg" src="logoimg.png" alt="LogoImg"></img>
+      
+          <div className="logo">
+             <h2>FINOVATECH.IO</h2>
         </div>
-
+        
         {/* 2nd menu part  */}
         <div className={"menu-link"}>
           <ul>
