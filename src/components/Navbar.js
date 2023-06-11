@@ -8,10 +8,8 @@ const Navbar = () => {
       <nav className="main-nav">
         {/* 1st logo part  */}
         <div className="logo">
-          
-          <h2>
-           FINOVATECH.IO
-          </h2>
+          <img className="logo LogoImg" src="logoimg.png" alt="LogoImg"></img>
+          <h2>FINOVATECH.IO</h2>
         </div>
 
         {/* 2nd menu part  */}
@@ -29,8 +27,12 @@ const Navbar = () => {
             <li>
               <NavLink to="/contact">About Us</NavLink>
             </li>
-            <li>           
-              <NavLink to="/#" className="logIn">Log In</NavLink>
+            <li>
+             
+              <NavLink to="/#" className="logIn">
+              <img className="LogImg" src="userLOGO.png" alt="LoginImage"></img>
+                Log In
+              </NavLink>
             </li>
             <li>
             
