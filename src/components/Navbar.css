@@ -1,0 +1,145 @@
+@import url("https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Jost", sans-serif;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+/* 
+ 
+
+/* navbar style start  */
+
+.main-nav {
+  width: 100%;
+  height: 10rem;
+  display: grid;
+  grid-template-columns: 10rem 1fr 0.6fr 5rem;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+
+.logo {
+    font-family: barlow-medium, barlow, sans-sarif;
+  display: grid;
+  /* background-color: #3b5998; */
+  grid-column: 2/3;
+  justify-content: start;
+  align-items: center;
+}
+
+.menu-link {
+  grid-column: 3/4;
+}
+
+.menu-link ul {
+  height: 10rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+
+/* ----------- Grid part ends ----------------- */
+
+.logo h2 {
+  font-size: 2.5rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: whitesmoke;
+  display: inline-block;
+  
+  /* to add gradient color if required */
+  /* background: -webkit-linear-gradient(#eee, rgb(69, 57, 248));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; */
+}
+
+
+.menu-link ul li {
+  font-size: 1.5rem;
+}
+
+.menu-link ul li a {
+  text-transform: capitalize;
+  color: rgba(255, 255, 255, 0.8);
+  transition: 0.4s;
+}
+.menu-link ul li:hover > a {
+  transform-origin: left;
+  color: rgb(253, 98, 98);
+  /* text-decoration: underline; */
+  transition: 0.4s;
+}
+
+.navButton{
+    background: rgb(253, 98, 98);
+  -webkit-background-clip: text;
+  background-clip: border-box;
+  border-radius: 100px;
+  width: 110px;
+  height: 40px;
+  size: 30px;
+  transition: 0.4s;
+
+}
+.navButton:hover{
+    background: aquamarine;
+    transition: 0.4s;
+}
+
+.logIn{
+    color: rgb(253, 98, 98) !important;
+    font-size: 1.9rem; 
+}
+.logIn:hover{
+    color: rgb(169, 62, 62) !important; 
+}
+
+.LogImg{
+    height: 25px;
+    width: 25px;
+    display: inline-block;
+    margin-right: 10px;
+}
+.LogoImg{
+    height: 35px;
+    width: 35px;
+    display: inline-block;
+}
+
+/* hero section   */
+
+.hero-section {
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.hero-section p {
+  font-size: 3rem;
+  text-transform: capitalize;
+}
+
+.hero-section h1 {
+  font-size: 5rem;
+  text-transform: uppercase;
+  text-align: center;
+}
+
