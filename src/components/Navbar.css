@@ -40,6 +40,7 @@ li {
   grid-column: 2/3;
   justify-content: start;
   align-items: center;
+
 }
 
 .menu-link {
@@ -61,7 +62,9 @@ li {
   font-weight: 400;
   text-transform: uppercase;
   color: whitesmoke;
-  display: inline-block;
+  
+  
+  
   
   /* to add gradient color if required */
   /* background: -webkit-linear-gradient(#eee, rgb(69, 57, 248));
@@ -119,7 +122,11 @@ li {
 .LogoImg{
     height: 35px;
     width: 35px;
-    display: inline-block;
+    position: relative;
+    top: 32px;
+    left: 62px;
+    
+
 }
 
 /* hero section   */
