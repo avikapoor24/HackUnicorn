@@ -8,7 +8,7 @@ const Navbar = () => {
       <nav className="main-nav">
         {/* 1st logo part  */}
         <div className="logo">
-          <img className="logo LogoImg" src="logoimg.png" alt="LogoImg"></img>
+          <img className=" LogoImg" src="logoimg.png" alt="LogoImg"></img>
           <h2>FINOVATECH.IO</h2>
         </div>
 
