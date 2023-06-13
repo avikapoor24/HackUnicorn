@@ -13,7 +13,7 @@ function App() {
 
      
       <Router />
-      <Footer className='relative top-20' />
+      <Footer />
         
       </div>
     </>
