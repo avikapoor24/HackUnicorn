@@ -1,6 +1,6 @@
 import "./App.css";
 import Navbar from './components/Navbar';
-
+import Footer from "./components/Footer";
 import Router from "./routes/routes";
 
 function App() {
@@ -11,8 +11,10 @@ function App() {
 
         
 
-
+     
       <Router />
+      <Footer className='relative top-20' />
+        
       </div>
     </>
   );

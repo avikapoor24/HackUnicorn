@@ -36,7 +36,6 @@ li {
 .logo {
     font-family: barlow-medium, barlow, sans-sarif;
   display: grid;
-  /* background-color: #3b5998; */
   grid-column: 2/3;
   justify-content: start;
   align-items: center;
