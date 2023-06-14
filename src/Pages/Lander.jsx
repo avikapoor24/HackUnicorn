@@ -6,7 +6,8 @@ import Fifth from "../components/Fifth"
 
 const Lander = () => {
   return (
-    <><Home />
+    <>
+    <Home />
     <Third />
     <Fourth />
     <Fifth />
