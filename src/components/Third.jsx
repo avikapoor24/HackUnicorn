@@ -1,5 +1,5 @@
 import React from 'react'
-import images from "../Assets/Images/d.png"
+import images from "../Assets/Images/v.png"
 
 
 const Third = () =>  {
