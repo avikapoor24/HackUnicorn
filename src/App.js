@@ -7,12 +7,11 @@ function App() {
   return (
     <>
     <div className="App bg-black"> 
+    
       <Navbar />
-
-        
-
-     
+      
       <Router />
+        
       <Footer />
         
       </div>
