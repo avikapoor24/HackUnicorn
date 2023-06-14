@@ -1,4 +1,5 @@
 import React from 'react';
+import ab from "../Assets/Images/logoimg.png"
 import {
   FaDribbbleSquare,
   FaGithubSquare,
@@ -10,9 +11,9 @@ import Newsletter from './Newsletter';
 
 const Footer = () => {
   return (
-    <div className='max-w-[1240px] mx-auto grid lg:grid-cols-3 gap-10 relative  text-[#525252] mt-auto '>
+    <div className='max-w-[1240px] h-[28vh] mx-auto grid lg:grid-cols-3 gap-10 relative  text-[#525252] mt-auto  pt-7'>
           <div className='justify-center '>
-            <img className='h-12 w-12 inline-block relative bottom-2 right-2' src="logoimg.png" alt="LogoImg"></img>
+            <img className='h-12 w-12 inline-block relative bottom-2 right-2' src={ab} alt="LogoImg"></img>
         <a href='/src/components/Home.jsx' className=' text-4xl  text-[#ffffff] inline-block'>FINOVATECH.IO</a>
         
               <ul className='py-4 text-2xl'>

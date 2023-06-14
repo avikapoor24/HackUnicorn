@@ -1,4 +1,5 @@
 import "./App.css";
+import NavbarA from './components/NavbarA';
 import Navbar from './components/Navbar';
 import Footer from "./components/Footer";
 import Router from "./routes/routes";
@@ -6,11 +7,13 @@ import Router from "./routes/routes";
 function App() {
   return (
     <>
+    <NavbarA />
     <div className="App bg-black"> 
     
-      <Navbar />
       
-      <Router />
+      
+
+       <Router />
      </div>    
       <Footer />
         
