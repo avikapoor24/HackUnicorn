@@ -6,7 +6,7 @@ import ima from "../Assets/Images/p.png"
 const Services = () => {
   return (
     <div
-    className="h-[50vh] bg-center bg-cover bg-no-repeat"
+    className="h-[50vh] bg-center bg-cover bg-no-repeat mb-[1600px]"
     style={{
       backgroundImage: `url(${image})`,
     }}
