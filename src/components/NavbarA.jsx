@@ -42,43 +42,43 @@ const NavbarA = () => {
           />
           <span 
           
-          className="text-white text-6xl font-bold">
+          className="text-white text-6xl ">
 FINOVATECH.IO</span>
         </a>
         <div>
           <a
             href="/services"
-            className="text-white text-4xl ml-4 hover:text-gray-400 transition duration-300"
+            className="text-white text-2xl ml-4 hover:text-gray-400 transition duration-300"
           >
             Services
           </a>
           <a
             href="/Portfolio"
-            className="text-white text-4xl ml-4 hover:text-gray-400 transition duration-300"
+            className="text-white text-2xl ml-4 hover:text-gray-400 transition duration-300"
           >
             Portfolio
           </a>
           <a
             href="/vision"
-            className="text-white text-4xl ml-4 hover:text-gray-400 transition duration-300"
+            className="text-white text-2xl ml-4 hover:text-gray-400 transition duration-300"
           >
             Vision
           </a>
           <a
             href="/about-us"
-            className="text-white text-4xl ml-4 hover:text-gray-400 transition duration-300"
+            className="text-white text-2xl ml-4 hover:text-gray-400 transition duration-300"
           >
             About Us
           </a>
           
           <a
-            href="/"
-            className="bg-customRed text-red-600 text-4xl ml-4 py-2 px-4 rounded hover:bg-white transition duration-300"
+            href="/signup"
+            className="bg-customRed text-red-600 text-2xl ml-4 py-2 px-4 rounded hover:bg-white transition duration-300"
           >
-            LogIn /SignUp
+            LogIn 
           </a>
           <button
-            className="bg-red-600 text-white text-3xl ml-5 py-1 px-4 rounded hover:bg-red-700 transition duration-300"
+            className="bg-red-600 text-white text-2xl ml-5 py-1 px-4 rounded-full hover:bg-red-700 transition duration-300"
           >
             Get Started
           </button>

@@ -7,6 +7,7 @@ import About_Us from "../Pages/AboutUs";
 import Login from "../components/Login";
 import Register from "../components/Register";
 import Portfolio from "../components/Portfolio";
+import LoginPage from "../components/Signup";
 function routes() {
   return (
     <Routes>
@@ -17,6 +18,8 @@ function routes() {
       <Route path="/about-us" element={<About_Us />} />
       <Route path="/login" element={<Login />} />
       <Route path="/register" element={<Register />} />
+      <Route path="/signup" element={<LoginPage />} />
+
       {/* <Route path='/get-started' element={<Lander/>} />  -- TBD  */}
     </Routes>
   );
