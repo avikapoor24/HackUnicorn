@@ -12,7 +12,7 @@ const Services = () => {
     }}
   >
     <div className="h-full flex flex-col justify-start pt-20 px-4 ">
-        <h1 className="text-8xl  text-white px-40">Dive Into the New Age of  </h1>
+        <h1 className="text-8xl  text-white px-40 mt-[90px]">Dive Into the New Age of  </h1>
 <h1 className="text-8xl  text-white px-40"> Accelerated Analytics
 </h1>
 
