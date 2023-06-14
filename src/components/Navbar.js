@@ -3,6 +3,7 @@ import "./Navbar.css";
 import { NavLink } from "react-router-dom";
 
 const Navbar = () => {
+
   return (
     <>
       <nav className="fixed top-0 left-0 w-full transition-opacity duration-500 z-50 main-nav">
@@ -29,13 +30,23 @@ const Navbar = () => {
               <NavLink to="/about-us">About Us</NavLink>
             </li>
             <li>
-              <NavLink className="logIn">
+              <NavLink className="logIn" to="/login">
                 <img
                   className="LogImg"
                   src="userLOGO.png"
                   alt="LoginImage"
                 ></img>
                 Log In
+              </NavLink>
+            </li>
+            <li>
+              <NavLink className="logIn" to="/register">
+                <img
+                  className="LogImg"
+                  src="userLOGO.png"
+                  alt="LoginImage"
+                ></img>
+                Sign Up
               </NavLink>
             </li>
             <li>
