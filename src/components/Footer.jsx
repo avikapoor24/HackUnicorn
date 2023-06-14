@@ -10,7 +10,7 @@ import Newsletter from './Newsletter';
 
 const Footer = () => {
   return (
-    <div className='max-w-[1240px] mx-auto grid lg:grid-cols-3 gap-1  text-[#525252] '>
+    <div className='max-w-[1240px] mx-auto grid lg:grid-cols-3 gap-1 relative top-[150px] text-[#525252] '>
           <div className='justify-center '>
             <img className='h-12 w-12 inline-block relative bottom-2 right-2' src="logoimg.png" alt="LogoImg"></img>
             <h1 className=' text-4xl  text-[#ffffff] inline-block'>FINOVATECH.IO</h1>
