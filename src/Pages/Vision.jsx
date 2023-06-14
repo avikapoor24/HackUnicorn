@@ -1,4 +1,6 @@
 import React from "react";
+import image from "../Assets/Images/bgimgVision.png"
+
 const Vision = () => {
   return (
     <div className=" m-3 Heading font-roboto text-2xl sm:text-3xl md:text-5xl relative top-20 text-white text-center py-10">
@@ -16,8 +18,11 @@ const Vision = () => {
         </div>
     </div> */}
       <div>
-      <div className="">
-        <img src="src/Assets/Images/bgimgVision.png" alt="Vision"></img>
+        <div className=""
+          style={{
+            backgroundImage: `url(${image})`,
+          }}>
+        
       </div>
       {/* <div>
         <div >

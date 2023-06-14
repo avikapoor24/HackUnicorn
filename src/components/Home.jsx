@@ -4,7 +4,7 @@ import image from "../Assets/Images/a.jpeg"
 const Home = () => {
   return (
     <div
-    className="h-[85vh] bg-center bg-cover bg-no-repeat"
+    className="h-[85vh] bg-center bg-cover bg-no-repeat "
     style={{
       backgroundImage: `url(${image})`,
     }}
