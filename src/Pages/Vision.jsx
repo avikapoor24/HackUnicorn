@@ -34,7 +34,14 @@ In the vibrant realm of financial technology, FinovaTech emerged as a beacon of 
       </div>
         </div>
         
-        
+        <div
+          className="h-[60vh] bg-center bg-cover bg-no-repeat"
+          style={{
+              backgroundImage: `url(${image2})`,
+          }}
+      >
+
+          </div>
         
   
         
