@@ -46,7 +46,8 @@ const LoginPage = () => {
   return (
     <div className="flex flex-col items-center justify-center min-h-screen text-black">
       <h1 className="text-9xl font-bold  text-white mb-4">Login</h1>
-      <h1 className="text-9xl font-bold cursor-pointer  text-white mb-4" onClick={()=> navigate("/signup")}>New User ? Subscribe first  </h1>
+      <h1 className="text-9xl font-bold cursor-pointer  text-white mb-4" onClick={()=> navigate("/signup")}>New User ?   </h1>
+      <h1 className="text-9xl font-bold cursor-pointer  text-red-600 mb-4" onClick={()=> navigate("/signup")}> Subscribe first  </h1>
       <form
         className="bg-gray-100 rounded shadow-lg px-8 py-6 w-8/12"
         onSubmit={loginUser}

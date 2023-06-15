@@ -57,7 +57,7 @@ const NavbarA = () => {
               href="/about-us"
               className="text-white text-2xl ml-4 hover:text-gray-400 transition duration-300"
             >
-              About Us
+              News
             </a>
 
             <a
