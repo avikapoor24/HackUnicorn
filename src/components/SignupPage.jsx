@@ -57,16 +57,16 @@ const SignUpPage = () => {
   };
 
   // const url = "https://finovatech-data.onrender.com";
-  const url = "https://localhost:4000";
+  // const url = "http://localhost:4000";
 
   async function registerUser(event) {
     event.preventDefault();
-    const response = await fetch(`${url}/api/register`, {
+    const response = await fetch("http://localhost:4000/api/register", {
       method: "POST",
       headers: {
-        'Accept': 'application/json',
+        // 'Accept': 'application/json',
         'Content-Type': 'application/json',
-        'Access-Control-Allow-Origin': '*'
+        // 'Access-Control-Allow-Origin': '*'
       },
       body: JSON.stringify({
         username,

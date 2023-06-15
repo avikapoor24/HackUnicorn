@@ -18,17 +18,17 @@ const LoginPage = () => {
 
 
   // const url = "https://finovatech-data.onrender.com";
-  const url = "https://localhost:4000";
+  // const url = "http://localhost:4000";
 
 
   async function loginUser(event) {
     event.preventDefault();
-    const res = await fetch(`${url}/api/login`, {
+    const res = await fetch("http://localhost:4000/api/login", {
       method: "POST",
       headers: {
-        'Accept': 'application/json',
+        // 'Accept': 'application/json',
         'Content-Type': 'application/json',
-        'Access-Control-Allow-Origin': '*'
+        // 'Access-Control-Allow-Origin': '*'
       },
       body: JSON.stringify({
         email,
