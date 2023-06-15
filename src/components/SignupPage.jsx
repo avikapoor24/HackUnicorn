@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
+import Space from "../components/Space";
 
 const SignUpPage = () => {
   const [username, setUsername] = useState("");
@@ -81,6 +82,8 @@ const SignUpPage = () => {
   }
 
   return (
+    <>
+    <Space />
     <div className="flex flex-col items-center justify-center min-h-screen text-black">
       <h1 className="text-9xl font-bold text-white mb-4">Signup</h1>
       <h1
@@ -270,6 +273,7 @@ const SignUpPage = () => {
         </button>
       </form>
     </div>
+    </>
   );
 };
 
