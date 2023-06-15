@@ -18,6 +18,9 @@ const Portfolio = () => {
         const res = await fetch(`${url}/api/user`, {
           headers: {
             "x-access-token": localStorage.getItem("token"),
+            'Accept': 'application/json',
+            'Content-Type': 'application/json',
+            'Access-Control-Allow-Origin': '*'
           },
         });
 
