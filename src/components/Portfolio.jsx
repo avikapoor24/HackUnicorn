@@ -8,12 +8,14 @@ const Portfolio = () => {
   const [accountBalance, setAccountBalance] = useState(0);
   const [recentTransactions, setRecentTransactions] = useState([]);
 
+  const url = "https://finovatech-data.onrender.com";
+
   useEffect(() => {
     // Fetch user data from the API or your data source
     // and set the individual state variables accordingly
     const fetchUserData = async () => {
       try {
-        const res = await fetch("http://localhost:4000/api/user", {
+        const res = await fetch(`${url}/api/user`, {
           headers: {
             "x-access-token": localStorage.getItem("token"),
           },
