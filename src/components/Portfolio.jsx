@@ -8,7 +8,8 @@ const Portfolio = () => {
   const [accountBalance, setAccountBalance] = useState(0);
   const [recentTransactions, setRecentTransactions] = useState([]);
 
-  const url = "https://finovatech-data.onrender.com";
+  // const url = "https://finovatech-data.onrender.com";
+  const url = "https://localhost:4000";
 
   useEffect(() => {
     // Fetch user data from the API or your data source

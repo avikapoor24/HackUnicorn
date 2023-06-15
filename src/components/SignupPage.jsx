@@ -56,7 +56,8 @@ const SignUpPage = () => {
     setRecentTransactions(updatedTransactions);
   };
 
-  const url = "https://finovatech-data.onrender.com";
+  // const url = "https://finovatech-data.onrender.com";
+  const url = "https://localhost:4000";
 
   async function registerUser(event) {
     event.preventDefault();
