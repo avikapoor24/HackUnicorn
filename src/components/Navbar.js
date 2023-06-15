@@ -3,7 +3,6 @@ import "./Navbar.css";
 import { NavLink } from "react-router-dom";
 
 const Navbar = () => {
-
   return (
     <>
       <nav className="fixed top-0 left-0 w-full transition-opacity duration-500 z-50 main-nav">

@@ -1,73 +1,77 @@
 import React, { useEffect, useState } from "react";
 
-const UserDetail = ({ email, password }) => {
-  const [user, setUser] = useState(null);
-
-  async function fetchData() {
-    const res = await fetch("http://localhost:4000/api/user", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify({ email, password }),
-    });
-
-    const data = await res.json();
-    if (data.status === "ok") {
-      setUser(data.user);
-    } else {
-      alert(data.error);
-    }
-  }
+const Portfolio = () => {
+  const [username, setUsername] = useState("");
+  const [email, setEmail] = useState("");
+  const [address, setAddress] = useState("");
+  const [accNo, setAccNo] = useState("");
+  const [accountBalance, setAccountBalance] = useState(0);
+  const [recentTransactions, setRecentTransactions] = useState([]);
 
   useEffect(() => {
-    fetchData();
-  }, [email, password]);
+    // Fetch user data from the API or your data source
+    // and set the individual state variables accordingly
+    const fetchUserData = async () => {
+      try {
+        const res = await fetch("http://localhost:4000/api/user", {
+          headers: {
+            "x-access-token": localStorage.getItem("token"),
+          },
+        });
 
-  if (!user) {
-    return <div>Loading user data...</div>;
-  }
+        const data = await res.json();
+        if (data.status === "ok") {
+          const user = data.user;
+          setUsername(user.username);
+          setEmail(user.email);
+          setAddress(user.address);
+          setAccNo(user.accno);
+          setAccountBalance(user.accountBalance);
+          setRecentTransactions(user.recentTransactions);
+        } else {
+          alert(data.error);
+        }
+      } catch (error) {
+        console.log(error);
+        // Handle error
+      }
+    };
+
+    fetchUserData();
+  }, []);
 
   return (
-    <div>
-      <h1>Welcome, {user.name}!</h1>
-      <p>Email: {user.email}</p>
-      <p>Address: {user.address}</p>
-      <p>Account Number: {user.accountNumber}</p>
-      <p>Account Balance: ${user.accountBalance}</p>
-      <h2>Recent Transactions:</h2>
-      <ul>
-        {user.recentTransactions.map((transaction, index) => (
-          <li key={index}>
-            <p>Date: {transaction.date}</p>
-            <p>Amount: ${transaction.amount}</p>
-            {transaction.type === "Purchase" && (
-              <p>Recipient: {transaction.recipient}</p>
-            )}
-            {transaction.type === "Payment" && (
-              <p>Sender: {transaction.sender}</p>
-            )}
-            {transaction.type === "Bill Payment" && (
-              <p>Recipient: {transaction.recipient}</p>
-            )}
-            {transaction.type === "Dividend" && (
-              <p>Sender: {transaction.sender}</p>
-            )}
-            {transaction.type === "Gift" && (
-              <p>Sender: {transaction.sender}</p>
-            )}
-            {transaction.type === "Vacation Booking" && (
-              <p>Recipient: {transaction.recipient}</p>
-            )}
-            {transaction.type === "Bonus" && (
-              <p>Sender: {transaction.sender}</p>
-            )}
-            <hr />
-          </li>
-        ))}
-      </ul>
+    <div className="min-h-screen bg-black flex items-center justify-center">
+      <div className="bg-blue-200 rounded-lg shadow-xl p-8 max-w-4xl w-full transition duration-500 ease-in transform hover:shadow-2xl">
+        <h1 className="text-5xl font-bold mb-8">Portfolio</h1>
+
+        {username ? (
+          <div>
+            <h2 className="text-3xl font-bold mb-6">Username: {username}</h2>
+            <p className="text-xl mb-4">Email: {email}</p>
+            <p className="text-xl mb-4">Address: {address}</p>
+            <p className="text-xl mb-4">Account Number: {accNo}</p>
+            <p className="text-xl mb-4">Account Balance: ${accountBalance}</p>
+
+            <h3 className="text-3xl font-bold mt-8 mb-6">Recent Transactions:</h3>
+            <ul>
+              {recentTransactions.map((transaction, index) => (
+                <li key={index} className="mb-4">
+                  <p className="text-xl">Date: {transaction.date}</p>
+                  <p className="text-xl">Amount: ${transaction.amount}</p>
+                  {transaction.recipient && <p className="text-xl">Recipient: {transaction.recipient}</p>}
+                  {transaction.sender && <p className="text-xl">Sender: {transaction.sender}</p>}
+                  <p className="text-xl">Type: {transaction.type}</p>
+                </li>
+              ))}
+            </ul>
+          </div>
+        ) : (
+          <p className="text-xl">Loading user data...</p>
+        )}
+      </div>
     </div>
   );
 };
 
-export default UserDetail;
+export default Portfolio;

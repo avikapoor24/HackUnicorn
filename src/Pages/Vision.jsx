@@ -5,9 +5,11 @@ import image2 from "../Assets/Images/bgimgVision.png"
 const Vision = () => {
   return (
     <>
-    <div className="h-[85vh] bg-center bg-cover bg-no-repeat mb-[30%] "
+    <div className="h-[95vh] bg-center bg-cover bg-no-repeat mb-[30%]  "
     style={{
       backgroundImage: `url(${image})`,
+      // overflowX:"hidden",
+      // overflowY:"auto",
     }}>
     <div className=" m-3 Heading font-roboto text-4xl relative top-[150px] left-[5%]  text-white  py-10">
     
@@ -15,16 +17,18 @@ const Vision = () => {
       <p className="mt-10 ml-[30px] w-[700px]">At Finovatech, our vision is to revolutionize the way people manage their finances. We strive to provide innovative solutions that simplify the complex world of finance, empowering individuals and businesses to take control of their financial future. Our ultimate goal is to help our clients achieve financial success and security, one transaction at a time.</p>
     </div>
       <div className="
-      bg-[#141414] w-[1500px] h-[600px] 
+      bg-[#141414]  h-[600px] 
        border-[0.2px] border-[#858585] 
        mx-[5%] mt-[15%] 
        ">
           <div style={{
       backgroundImage: `url(${image})`,
+      // overflowX:"hidden"
+      // overflowY:"hidden"
     }}>
             
     </div><div
-            className="h-[600px] w-[600px] bg-contain bg-no-repeat "
+            className="h-[600px] bg-contain bg-no-repeat "
           style={{
               backgroundImage: `url(${image2})`,
           }}

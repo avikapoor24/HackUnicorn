@@ -1,20 +1,17 @@
-import React from 'react'
-import images from "../Assets/Images/a.jpeg"
+import React from "react";
+import images from "../Assets/Images/a.jpeg";
 
-
-const Space = () =>  {
+const Space = () => {
   return (
-    <><div
-          className="h-[6vh] bg-center bg-cover bg-no-repeat"
-          style={{
-              backgroundImage: `url(${images})`,
-          }}
-      >
-
-          </div></>
+    <>
+      <div
+        className="h-[6vh] bg-center bg-cover bg-no-repeat"
+        style={{
+          backgroundImage: `url(${images})`,
+        }}
+      ></div>
+    </>
   );
 };
-    
-  
 
-export default Space
+export default Space;

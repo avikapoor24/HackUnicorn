@@ -34,7 +34,7 @@ li {
 }
 
 .logo {
-    font-family: barlow-medium, barlow, sans-sarif;
+  font-family: barlow-medium, barlow, sans-sarif;
   display: grid;
   grid-column: 2/3;
   justify-content: start;
@@ -61,10 +61,10 @@ li {
   font-weight: 400;
   text-transform: uppercase;
   color: whitesmoke;
-  
-  
-  
-  
+
+
+
+
   /* to add gradient color if required */
   /* background: -webkit-linear-gradient(#eee, rgb(69, 57, 248));
   -webkit-background-clip: text;
@@ -81,15 +81,16 @@ li {
   color: rgba(255, 255, 255, 0.8);
   transition: 0.4s;
 }
-.menu-link ul li:hover > a {
+
+.menu-link ul li:hover>a {
   transform-origin: left;
   color: rgb(253, 98, 98);
   /* text-decoration: underline; */
   transition: 0.4s;
 }
 
-.navButton{
-    background: rgb(253, 98, 98);
+.navButton {
+  background: rgb(253, 98, 98);
   -webkit-background-clip: text;
   background-clip: border-box;
   border-radius: 100px;
@@ -100,32 +101,35 @@ li {
   padding: 10px;
 
 }
-.navButton:hover{
-    background: aquamarine;
-    transition: 0.4s;
+
+.navButton:hover {
+  background: aquamarine;
+  transition: 0.4s;
 }
 
-.logIn{
-    color: rgb(253, 98, 98) !important;
-    font-size: 1.9rem; 
-}
-.logIn:hover{
-    color: rgb(169, 62, 62) !important; 
+.logIn {
+  color: rgb(253, 98, 98) !important;
+  font-size: 1.9rem;
 }
 
-.LogImg{
-    height: 25px;
-    width: 25px;
-    display: inline-block;
-    margin-right: 10px;
+.logIn:hover {
+  color: rgb(169, 62, 62) !important;
 }
-.LogoImg{
-    height: 35px;
-    width: 35px;
-    position: relative;
-    top: 32px;
-    left: 62px;
-    
+
+.LogImg {
+  height: 25px;
+  width: 25px;
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.LogoImg {
+  height: 35px;
+  width: 35px;
+  position: relative;
+  top: 32px;
+  left: 62px;
+
 
 }
 
@@ -149,4 +153,3 @@ li {
   text-transform: uppercase;
   text-align: center;
 }
-
