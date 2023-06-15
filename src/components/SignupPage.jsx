@@ -56,9 +56,11 @@ const SignUpPage = () => {
     setRecentTransactions(updatedTransactions);
   };
 
+  const url = "https://finovatech-data.onrender.com";
+
   async function registerUser(event) {
     event.preventDefault();
-    const response = await fetch("http://localhost:4000/api/register", {
+    const response = await fetch(`${url}/api/register`, {
       method: "POST",
       headers: {
         "Content-type": "application/json",

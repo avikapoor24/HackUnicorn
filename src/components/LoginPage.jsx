@@ -17,9 +17,12 @@ const LoginPage = () => {
   };
 
 
+  const url = "https://finovatech-data.onrender.com";
+
+
   async function loginUser(event) {
     event.preventDefault();
-    const res = await fetch("http://localhost:4000/api/login", {
+    const res = await fetch(`${url}/api/login`, {
       method: "POST",
       headers: {
         "Content-type": "application/json",
